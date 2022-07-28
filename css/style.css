@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f5f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main h1{
+    margin: 0;
+    margin-top: 2em;
+    font-size: 4em;
+    text-align: center;
+}
+
+#main span{
+    display: block;
+    text-align: center;
+    font-size: 5em;
+    margin-top: 0em;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    margin: 1em 0.5em;
+    width: 32%;
+    height: 10vh;
+    font-size: 1.1em;
+    border: 2px black solid;
+    border-radius: 6px;
+}
+
+#decrease:hover{
+    background-color: firebrick;
+}
+
+#reset:hover{
+    background-color: orange;
+}
+
+#increase:hover{
+    background-color: forestgreen
+}
+
+/*MEDIA QUERIES*/
+
+/*Moble site*/
+@media screen and (min-width: 480px){
+
+   #main h1{
+       margin-top: 1em;
+   }
+}
+
+/*Tablet site*/
+@media screen and (min-width: 600px){
+
+    #main{
+        margin-top: 8em;
+    }
+
+    .button {
+        width: 28%;
+        height: 6vh;
+        font-size: 1.1em;
+    }
+}
+
+/*Desktop*/
+@media screen and ( min-width:  1024px){
+    
+    .button {
+        width: 16%;
+        font-size: 1.4em;
+    }
+}
